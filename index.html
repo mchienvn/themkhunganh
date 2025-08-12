@@ -97,20 +97,7 @@
         </div>
     </div>
 
-    <!-- Share Modal -->
-    <div id="share-modal" class="modal-overlay fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-40 hidden opacity-0">
-        <div class="bg-white p-8 rounded-lg shadow-xl w-full max-w-lg">
-            <h2 class="text-2xl font-bold mb-4">Chia sẻ Dự án</h2>
-            <p class="text-slate-600 mb-4">Sao chép và gửi liên kết này cho người khác. Họ sẽ thấy chính xác những gì bạn đã thiết lập.</p>
-            <div class="flex gap-2">
-                <input type="text" id="share-link-input" class="w-full p-2 border border-slate-300 rounded-lg bg-slate-100" readonly>
-                <button id="copy-link-btn" class="bg-sky-600 text-white font-bold py-2 px-4 rounded-lg">Sao chép</button>
-            </div>
-            <div class="flex justify-end mt-6">
-                <button id="share-modal-close" class="bg-slate-200 text-slate-800 font-bold py-2 px-4 rounded-lg">Đóng</button>
-            </div>
-        </div>
-    </div>
+
 
     <div class="container mx-auto p-4 md:p-8">
         <header class="text-center mb-8">
@@ -126,7 +113,7 @@
                          <div class="space-y-4">
                             <div>
                                 <label class="block text-sm font-medium text-slate-700 mb-1">1. Tải ảnh của bạn</label>
-                                <button id="fabric-image-loader-btn" class="w-full bg-sky-600 text-white font-bold py-2 px-4 rounded-lg">Tải ảnh nền</button>
+                                <button id="fabric-image-loader-btn" class="w-full bg-sky-600 text-white font-bold py-2 px-4 rounded-lg">Tải ảnh</button>
                                 <input type="file" id="fabric-image-loader" class="hidden" accept="image/*">
                             </div>
                             <div>
@@ -190,8 +177,8 @@ document.addEventListener('DOMContentLoaded', () => {
     // --- Data: Predefined frames from a CORS-friendly host ---
     let frames = [
         { name: "Chọn một khung...", url: "" },
-        { name: "Khung Tròn Cổ điển", url: "https://i.ibb.co/Xf8h41Ly/framed-1.png" },
-        { name: "Khung 2", url: "https://i.ibb.co/YTfRKsvr/test.png" }
+        { name: "Không có khung", url: "" },
+        { name: "Khung thử nghiệm", url: "https://i.ibb.co/YTfRKsvr/test.png" }
     ];
     
     let availableFonts = [
@@ -673,3 +660,4 @@ document.addEventListener('DOMContentLoaded', () => {
 
 </body>
 </html>
+
